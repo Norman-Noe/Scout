@@ -16,8 +16,8 @@
             <DataTemplate DataType="{x:Type viewmodels:FrontPageVM}">
                 <views:FrontPage/>
             </DataTemplate>
-            <DataTemplate DataType="{x:Type viewmodels:InsertDataVM}">
-                <views:InsertData/>
+            <DataTemplate DataType="{x:Type viewmodels:GeneralInfoVM}">
+                <views:GeneralInfo/>
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>

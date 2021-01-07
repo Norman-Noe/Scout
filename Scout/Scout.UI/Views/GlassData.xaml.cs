@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace Scout.UI.Views
 {
     /// <summary>
-    /// Interaction logic for InsertData.xaml
+    /// Interaction logic for GlassData.xaml
     /// </summary>
-    public partial class GeneralInfo : UserControl
+    public partial class GlassData : UserControl
     {
-        public GeneralInfo()
+        public GlassData()
         {
             InitializeComponent();
         }

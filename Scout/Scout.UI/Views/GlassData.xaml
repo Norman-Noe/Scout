@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Scout.UI.Views.GeneralInfo"
+﻿<UserControl x:Class="Scout.UI.Views.GlassData"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -13,13 +13,13 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
-        
+
         <Image Grid.Row="0" HorizontalAlignment="Center">
             <Image.Source>
                 <BitmapImage UriSource="/Scout.UI;component/Images/ScoutLogoT.png"/>
             </Image.Source>
         </Image>
-        <Label Grid.Row="1" FontSize="20" FontFamily="ComicSans" FontWeight="Bold"  Content="General Information" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label Grid.Row="1" FontSize="20" FontFamily="ComicSans" FontWeight="Bold"  Content="Glass Data" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <ScrollViewer Grid.Row="2">
             <Grid>
                 <Grid.RowDefinitions>
@@ -36,15 +36,16 @@
                 <ComboBox Grid.Row="3" HorizontalAlignment="Stretch" materialDesign:HintAssist.Hint="Category" materialDesign:HintAssist.IsFloating="True"/>
                 <TextBox Grid.Row="4" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Sample Dimensions"/>
                 <TextBox Grid.Row="5" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Project Number"/>
+                <TextBox Grid.Row="5" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Project Manager"/>
             </Grid>
         </ScrollViewer>
         <DockPanel Grid.Row="3">
-            <Button  HorizontalAlignment ="Left" VerticalAlignment="Bottom"  Style="{StaticResource MaterialDesignFlatButton}" Command="{Binding GoToNewViewCommand}" CommandParameter="FrontPage">
+            <Button  HorizontalAlignment ="Left" VerticalAlignment="Bottom"  Style="{StaticResource MaterialDesignFlatButton}" Command="{Binding GoToNewViewCommand}" CommandParameter="Login">
                 <Button.Content>
                     <materialDesign:PackIcon Kind="ArrowBack" Foreground="SlateGray" Height="20" Width="20"  />
                 </Button.Content>
             </Button>
-            <Button  HorizontalAlignment ="Right" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Command="{Binding GoToNewViewCommand}" CommandParameter="GlassData">
+            <Button  HorizontalAlignment ="Right" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Command="{Binding GoToNewViewCommand}" CommandParameter="Login">
                 <Button.Content>
                     <materialDesign:PackIcon Kind="ArrowForward" Foreground="SlateGray" Height="20" Width="20" />
                 </Button.Content>
@@ -52,3 +53,4 @@
         </DockPanel>
     </Grid>
 </UserControl>
+

@@ -27,7 +27,7 @@
                     Glass Sample Repository
                     <LineBreak/>
         </TextBlock>
-        <Button Grid.Row="3" HorizontalAlignment ="Center" Width="150" Height="35" Style="{StaticResource MaterialDesignRaisedButton}" materialDesign:ButtonAssist.CornerRadius="8" Command="{Binding GoToNewViewCommand}" CommandParameter="InsertData">
+        <Button Grid.Row="3" HorizontalAlignment ="Center" Width="150" Height="35" Style="{StaticResource MaterialDesignRaisedButton}" materialDesign:ButtonAssist.CornerRadius="8" Command="{Binding GoToNewViewCommand}" CommandParameter="GeneralInfo">
             <Button.Content>
                 <Label Content="Insert New Data" />
             </Button.Content>
