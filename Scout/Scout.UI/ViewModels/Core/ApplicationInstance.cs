@@ -33,6 +33,9 @@ namespace Scout.UI.ViewModels
                 case ApplicationPage.GeneralInfo:
                     CurrentPage = new GeneralInfoVM();
                     break;
+                case ApplicationPage.GlassData:
+                    CurrentPage = new GlassDataVM();
+                    break;
             }
         }
 

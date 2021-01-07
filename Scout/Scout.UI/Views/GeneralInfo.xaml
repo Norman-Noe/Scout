@@ -29,6 +29,7 @@
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
                 <TextBox Grid.Row="0" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Label" HorizontalAlignment="Stretch"/>
                 <ComboBox Grid.Row="1" HorizontalAlignment="Stretch" materialDesign:HintAssist.Hint="Company" materialDesign:HintAssist.IsFloating="True"/>
@@ -36,6 +37,7 @@
                 <ComboBox Grid.Row="3" HorizontalAlignment="Stretch" materialDesign:HintAssist.Hint="Category" materialDesign:HintAssist.IsFloating="True"/>
                 <TextBox Grid.Row="4" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Sample Dimensions"/>
                 <TextBox Grid.Row="5" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Project Number"/>
+                <TextBox Grid.Row="6" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Project Manager"/>
             </Grid>
         </ScrollViewer>
         <DockPanel Grid.Row="3">

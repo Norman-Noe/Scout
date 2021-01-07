@@ -19,6 +19,9 @@
             <DataTemplate DataType="{x:Type viewmodels:GeneralInfoVM}">
                 <views:GeneralInfo/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:GlassDataVM}">
+                <views:GlassData/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

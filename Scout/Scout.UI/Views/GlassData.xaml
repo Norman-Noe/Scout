@@ -29,18 +29,47 @@
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
-                <TextBox Grid.Row="0" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Label" HorizontalAlignment="Stretch"/>
-                <ComboBox Grid.Row="1" HorizontalAlignment="Stretch" materialDesign:HintAssist.Hint="Company" materialDesign:HintAssist.IsFloating="True"/>
-                <TextBox Grid.Row="2" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Name"/>
-                <ComboBox Grid.Row="3" HorizontalAlignment="Stretch" materialDesign:HintAssist.Hint="Category" materialDesign:HintAssist.IsFloating="True"/>
-                <TextBox Grid.Row="4" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Sample Dimensions"/>
-                <TextBox Grid.Row="5" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Project Number"/>
-                <TextBox Grid.Row="5" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Project Manager"/>
+                <Expander Grid.Row="0" Header="Glass Layer 1"  Margin="0 10 0 0" Background="Transparent">
+                    <StackPanel>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Base" HorizontalAlignment="Stretch"/>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Base Spec" HorizontalAlignment="Stretch"/>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Thickness [mm]" HorizontalAlignment="Stretch"/>
+                    </StackPanel>
+                </Expander>
+                <Expander Grid.Row="1" Header="Glass Layer 2" Margin="0 10 0 0" Background="Transparent">
+                    <StackPanel>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Base" HorizontalAlignment="Stretch"/>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Base Spec" HorizontalAlignment="Stretch"/>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Thickness [mm]" HorizontalAlignment="Stretch"/>
+                    </StackPanel>
+                </Expander>
+                <Expander Grid.Row="2" Header="Glass Layer 3" Margin="0 10 0 0" Background="Transparent">
+                    <StackPanel>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Base" HorizontalAlignment="Stretch"/>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Base Spec" HorizontalAlignment="Stretch"/>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Thickness [mm]" HorizontalAlignment="Stretch"/>
+                    </StackPanel>
+                </Expander>
+                <Expander Grid.Row="3" Header="Coating Layer 1" Margin="0 10 0 0" Background="Transparent">
+                    <StackPanel>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Coating" HorizontalAlignment="Stretch"/>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Coating Surface" HorizontalAlignment="Stretch"/>
+                    </StackPanel>
+                </Expander>
+                <Expander Grid.Row="4" Header="Coating Layer 2" Margin="0 10 0 0" Background="Transparent">
+                    <StackPanel>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Coating" HorizontalAlignment="Stretch"/>
+                        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Coating Surface" HorizontalAlignment="Stretch"/>
+                    </StackPanel>
+                </Expander>
+                <TextBox Grid.Row="5" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Sample Dimensions"/>
+                <TextBox Grid.Row="6" HorizontalAlignment="Stretch" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Project Number"/>
             </Grid>
         </ScrollViewer>
         <DockPanel Grid.Row="3">
-            <Button  HorizontalAlignment ="Left" VerticalAlignment="Bottom"  Style="{StaticResource MaterialDesignFlatButton}" Command="{Binding GoToNewViewCommand}" CommandParameter="Login">
+            <Button  HorizontalAlignment ="Left" VerticalAlignment="Bottom"  Style="{StaticResource MaterialDesignFlatButton}" Command="{Binding GoToNewViewCommand}" CommandParameter="GeneralInfo">
                 <Button.Content>
                     <materialDesign:PackIcon Kind="ArrowBack" Foreground="SlateGray" Height="20" Width="20"  />
                 </Button.Content>
